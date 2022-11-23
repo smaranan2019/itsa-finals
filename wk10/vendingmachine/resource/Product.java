@@ -39,11 +39,6 @@ public class Product {
     }
 
     public double calculateTotalPrice(int selectedQuantity) {
-        if (name.equals("Sandwich") && selectedQuantity >= 2) {
-            return (price * selectedQuantity) * 0.9;
-        } else {
-            return price * selectedQuantity;
-        }
-
+        return price * selectedQuantity;
     }
 }
